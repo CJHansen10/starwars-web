@@ -9,18 +9,18 @@ export default function App() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    const pokemon = encodeURIComponent(name.toLowerCase());
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}/`;
+    const films = encodeURIComponent(name.toLowerCase());
+    const url = `https://swapi.dev/api/${films}/`;
     console.log(url);
     fetch(url)
-      .then((r) => r.json())
-      .then((r) => setData(r))
+      .then((response) => response.json())
+      .then((json) => setData(json))
       .catch((e) => setData(e));
   }, [name]);
 
   return (
     <div className="App">
-      <Title text="Poké Finder" />
+      <Title text="Star Wars Film Info!" />
       <Entry action={setName} />
       <Info name={name} data={data} />
     </div>
