@@ -7,11 +7,16 @@ import Info from "./Info.js";
 export default function App() {
   const [name, setName] = useState("");
   const [data, setData] = useState("");
+  const [loading, setLoading] = useState(false);
+
 
   useEffect(() => {
-    const films = encodeURIComponent(name.toLowerCase());
-    const url = `https://swapi.dev/api/${films}/`;
+    console.log(name)
+    const films = encodeURIComponent(name);
+    const url = `https://swapi.dev/api/films/${films}/`;
     console.log(url);
+
+    setLoading(true)
     fetch(url)
       .then((response) => response.json())
       .then((json) => setData(json))
@@ -21,7 +26,8 @@ export default function App() {
   return (
     <div className="App">
       <Title text="Star Wars Film Info!" />
-      <Entry action={setName} />
+      <Entry action= {setName} />
+      {loading && <loader />}
       <Info name={name} data={data} />
     </div>
   );
