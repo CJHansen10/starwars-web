@@ -32,10 +32,33 @@ input {
   border: 5px solid black;
 }
 
-img {
-  translate: 500px;
+.image1 {
+  overflow: hidden;
+  translate: 0px 125px;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin: 0px auto;
+  position: fixed;
+  left: -600px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  z-index: 10px;
 }
 
+.image2 {
+  overflow: hidden;
+  translate: 0px 125px;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin: 0px auto;
+  position: fixed;
+  left: 10px;
+  right: -600px;
+  top: 10px;
+  bottom: 10px;
+  z-index: 10px;
+}
 input:hover {
   background-color: burlywood;
 }
