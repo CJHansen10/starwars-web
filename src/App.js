@@ -11,13 +11,13 @@ export default function App() {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    console.log(name)
+    // console.log(name)
 
     if (name) {
       const fetchData = async () => {
         setLoading(true)
         const data = await getStarWars(name)
-        console.log('APP > data: ', data)
+        // console.log('APP > data: ', data)
 
         setData(data)
         setLoading(false)
@@ -27,8 +27,8 @@ export default function App() {
     }
   }, [name])
 
-  console.log('APP > name: ', name)
-  console.log('APP > data: ', data)
+  // console.log('APP > name: ', name)
+  // console.log('APP > data: ', data)
 
   return (
     <div className="App">

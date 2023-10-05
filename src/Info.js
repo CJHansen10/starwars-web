@@ -20,7 +20,7 @@ export default function Info({ name, data }) {
 
   // Get the movie name
   useEffect(() => {
-    console.log('INFO > movie useEffect > data: ', data)
+    // console.log('INFO > movie useEffect > data: ', data)
 
     setMovieTitle(data.title)
   }, [data])
@@ -39,9 +39,9 @@ export default function Info({ name, data }) {
     }
   }, [characterUrls])
 
-  console.log('INFO > CHARACTER DATA: ', characterData)
-  console.log('INFO > CHAR URLS: ', characterUrls)
-  console.log('INFO > MOVIE NAME: ', movieTitle)
+  // console.log('INFO > CHARACTER DATA: ', characterData)
+  // console.log('INFO > CHAR URLS: ', characterUrls)
+  // console.log('INFO > MOVIE NAME: ', movieTitle)
 
   return loading ? (
     <Loader />
