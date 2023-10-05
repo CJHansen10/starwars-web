@@ -4,6 +4,7 @@ import Title from './Title.js'
 import Entry from './Entry.js'
 import Info from './Info.js'
 import { getStarWars } from './api'
+import dancing_3po2 from './images/dancing_3po2.gif'
 
 export default function App() {
   const [name, setName] = useState('')
@@ -37,6 +38,7 @@ export default function App() {
       {/* {loading && <loader />} */}
 
       {loading ? 'LOADING' : <Info name={name} data={data} />}
+      <img src={dancing_3po2} />
     </div>
   )
 }

@@ -28,9 +28,12 @@ h1 {
 }
 
 input {
-  
   background-color: grey;
   border: 5px solid black;
+}
+
+img {
+  translate: 500px;
 }
 
 input:hover {
