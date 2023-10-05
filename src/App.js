@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Title text="Star Wars Film Info!" />
+      <Title text="Star Wars Film Characters 1-6!" />
       <Entry action={setName} />
       {/* {loading && <loader />} */}
 

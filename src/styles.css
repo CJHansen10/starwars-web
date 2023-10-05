@@ -20,14 +20,17 @@ body {
 }
 head {
   color: black;
-
 }
 h1 {
   color: blue;
 }
 
-h2 {
-  color: greenyellow;
+input {
+  background-color: aqua;
+}
+
+input:hover {
+  background-color: white;
 }
 
 ul {
