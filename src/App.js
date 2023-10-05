@@ -5,8 +5,6 @@ import Entry from './Entry.js'
 import Info from './Info.js'
 import { getStarWars } from './api'
 import dancing_3po2 from './images/dancing_3po2.gif'
-import dancing_3po3 from './images/dancing_3po3.gif'
-
 
 export default function App() {
   const [name, setName] = useState('')
