@@ -1,8 +1,10 @@
 body {
   flex: auto;
+  
   margin: 0;
   background-image: url("https://gifrific.com/wp-content/uploads/2012/08/Darth-Vader-and-Storm-Trooper-dance.gif");
-    
+  background-size: cover; 
+  
 }
   
   .App {

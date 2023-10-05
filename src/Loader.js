@@ -1,7 +1,7 @@
-import "./Loader.css";
+// import './Loader.css'
 
 const Loader = () => {
   return <p className="loader">Loading...</p>
-};
+}
 
-export default Loader;
+export default Loader
