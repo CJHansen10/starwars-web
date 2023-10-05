@@ -1,6 +1,6 @@
-body {
-  flex: auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body {
   margin: 0;
   background-image: url('https://gifrific.com/wp-content/uploads/2012/08/Darth-Vader-and-Storm-Trooper-dance.gif');
   background-size: cover;
@@ -13,7 +13,7 @@ body {
   grid-template-columns: 35%;
   justify-content: center;
   align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   background-size: contain;
   transition: background-color 0s, border-color 0s, transform 0.5s;
@@ -22,15 +22,19 @@ head {
   color: black;
 }
 h1 {
+  margin-left: auto;
+  margin-right: auto;
   color: blue;
 }
 
 input {
-  background-color: aqua;
+  
+  background-color: grey;
+  border: 5px solid black;
 }
 
 input:hover {
-  background-color: white;
+  background-color: burlywood;
 }
 
 ul {
