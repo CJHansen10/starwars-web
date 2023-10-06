@@ -3,15 +3,14 @@
 body {
   margin: 1;
   background-image: url('https://www.icegif.com/wp-content/uploads/2022/05/icegif-139.gif');
-  background-size: 150px
-  
+  background-size: 100px;
 }
 
-.App {
+div.App {
   color: crimson;
 
   display: grid;
-  grid-template-columns: 15%;
+  grid-template-columns: 30% 40% 30%;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
@@ -35,8 +34,23 @@ input {
   border: 5px solid black;
 }
 
-img {
-  translate: 500px;
+.title {
+  display: grid;
+  grid-column: 1/100;
+  grid-row: 2/3;
+}
+.MiddlePart {
+  display: flex;
+  flex-direction: column;
+}
+.image1 {
+  display: flex;
+  align-items: center;
+}
+
+.image2 {
+  display: flex;
+  align-items: center;
 }
 
 input:hover {
