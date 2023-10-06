@@ -45,7 +45,7 @@ export default function App() {
 
       <img src={dancing_3po2} class="image1" />
       <div className="MiddlePart">
-        <Title text="Star Wars Film Characters 1-6!!" className="title" />
+        <Title text="Star Wars Film Characters 1-6!!!!!!" className="title" />
         <Entry action={setName} />
         {loading ? 'LOADING' : <Info name={name} data={data} />}
       </div>
